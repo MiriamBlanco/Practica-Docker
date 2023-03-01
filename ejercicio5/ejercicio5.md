@@ -23,6 +23,8 @@ services:
 
 ![image](../imagenes/35.png)
 
+-----------------------------
+
 - Antes de crear el escenario, debemos instalar `docker-compose`:
 
 ```bash
@@ -30,6 +32,8 @@ sudo apt install docker-compose
 ```
 
 ![image](../imagenes/36.png)
+
+------------------------------
 
 -Ahora si, podemos crear el escenario:
 
@@ -39,6 +43,8 @@ docker-compose up -d
 
 ![image](../imagenes/37.png)
 
+----------------------------
+
 - Listamos los contendores:
 
 ```bash
@@ -47,9 +53,13 @@ docker-compose ps
 
 ![image](../imagenes/38.png)
 
+-------------------------------
+
 - Comprobamos que funciona desde el navegador:
 
 ![image](../imagenes/39.png)
+
+-------------------------------
 
 - Paramos los contenedores:
 
@@ -59,6 +69,8 @@ docker-compose stop
 
 ![image](../imagenes/40.png)
 
+--------------------------
+
 - Y, por último, eliminamos el escenario:
 
 ```bash
@@ -66,6 +78,9 @@ docker-compose down
 ```
 
 ![image](../imagenes/41.png)
+
+-------------------------------
+--------------------------------
 
 ## Ejemplo 2: Despliegue de la aplicación Temperaturas
 
@@ -92,6 +107,8 @@ services:
 
 ![image](../imagenes/42.png)
 
+-------------------------------
+
 - Creamos el escenario:
 
 ```bash
@@ -99,6 +116,8 @@ docker-compose up -d
 ```
 
 ![image](../imagenes/43.png)
+
+---------------------------------
 
 - Listamos los contenedores:
 
@@ -108,9 +127,14 @@ docker-compose ps
 
 ![image](../imagenes/44.png)
 
+-------------------------------
+
 - Y, por último, lo probamos en el navegador:
 
 ![image](../imagenes/45.png)
+
+-----------------
+----------------
 
 ## Ejemplo 3: Despliegue de WordPress + Mariadb
 
@@ -152,6 +176,8 @@ volumes:
 
 ![image](../imagenes/46.png)
 
+------------------------
+
 - Creamos el escenario:
 
 ```bash
@@ -159,6 +185,8 @@ docker-compose up -d
 ```
 
 ![image](../imagenes/47.png)
+
+-------------------------
 
 - Listamos los contenedores:
 
@@ -168,9 +196,13 @@ docker-compose ps
 
 ![image](../imagenes/48.png)
 
+-----------------------------
+
 - Y comprobamos si funciona en el navegador:
 
 ![image](../imagenes/49.png)
+
+---------------------
 
 - Paramos los contenedores:
 
@@ -180,6 +212,8 @@ docker-compose stop
 
 ![image](../imagenes/50.png)
 
+------------------------------
+
 - Y borramos el escenario:
 
 ```bash
@@ -188,5 +222,9 @@ docker-compose down
 
 ![image](../imagenes/51.png)
 
+--------------------
 
-[Volver a la página principal](../README.md)
+
+- [Volver a la página principal](../README.md)
+- [Práctica 4](../ejercicio4/ejercicio4.md)
+- [Práctica 6](../ejercicio6/ejercicio6.md)
