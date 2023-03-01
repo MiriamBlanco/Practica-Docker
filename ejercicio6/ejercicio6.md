@@ -8,6 +8,8 @@ En este ejemplo vamos a crear una imágen con una página estática.
 
 ![image](../imagenes/52.png)
 
+--------------------
+
 - El fichero `Dockerfile` contendrá lo siguiente:
 
 ```Dockerfile
@@ -20,6 +22,8 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 
 ![image](../imagenes/53.png)
 
+--------------------
+
 - Para crear la imagen, nos movemos a la carpeta donde se encuentra el fichero `Dockerfile` y ejecutamos lo siguiente:
 
 ```bash
@@ -27,6 +31,8 @@ docker build -t miriam/ejemplo1:v1 .
 ```
 
 ![image](../imagenes/55.png)
+
+--------------------
 
 - Comprobamos que la imagen se ha creado:
 
@@ -36,6 +42,8 @@ docker images
 
 ![image](../imagenes/56.png)
 
+--------------------
+
 - Creamos el contenedor:
 
 ```bash
@@ -44,9 +52,14 @@ docker run -d -p 80:80 --name ejemplo1 miriam/ejemplo1:v1
 
 ![image](../imagenes/57.png)
 
+--------------------
+
 - Y nos vamos al navegador para comprobar que funciona:
 
 ![image](../imagenes/58.png)
+
+--------------------
+--------------------
 
 ## Ejemplo 2: Construcción de imágenes con una una aplicación PHP
 
@@ -65,6 +78,8 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 
 ![image](../imagenes/59.png)
 
+--------------------
+
 - Para crear la imagen, nos movemos a la carpeta donde se encuentra el fichero `Dockerfile` y ejecutamos lo siguiente:
 
 ```bash
@@ -72,6 +87,8 @@ docker build -t miriam/ejemplo2:v1 .
 ```
 
 ![image](../imagenes/60.png)
+
+--------------------
 
 - Comprobamos que la imagen se ha creado:
 
@@ -81,6 +98,8 @@ docker images
 
 ![image](../imagenes/61.png)
 
+--------------------
+
 - Creamos el contenedor:
 
 ```bash
@@ -89,9 +108,14 @@ docker run -d -p 80:80 --name ejemplo2 miriam/ejemplo2:v1
 
 ![image](../imagenes/62.png)
 
+--------------------
+
 - Y, por último, comprobamos en el navegador que funciona:
 
 ![image](../imagenes/63.png)
+
+--------------------
+--------------------
 
 ## Ejemplo 3: Construcción de imágenes con una una aplicación Python
 
@@ -117,6 +141,8 @@ CMD [ "python3", "app.py"]
 
 ![image](../imagenes/64.png)
 
+--------------------
+
 - Para crear la imagen ejecutamos:
 
 ```bash
@@ -124,6 +150,8 @@ docker build -t miriam/ejemplo3:v1 .
 ```
 
 ![image](../imagenes/65.png)
+
+--------------------
 
 - Comprobamos que la imagen se ha creado:
 
@@ -133,6 +161,8 @@ docker images
 
 ![image](../imagenes/66.png)
 
+--------------------
+
 - Creamos el contenedor:
 
 ```bash
@@ -141,10 +171,12 @@ docker run -d -p 80:3000 --name ejemplo2 miriam/ejemplo3:v1
 
 ![image](../imagenes/67.png)
 
+--------------------
+
 - Y, para finalizar, comprobamos que funciona en el navegador:
 
 ![image](../imagenes/68.png)
 
 --------------------
 
-[Volver a la página principal](../README.md)
+#<div style="text-align: center">[Volver a la página principal](../README.md)#<div/>
