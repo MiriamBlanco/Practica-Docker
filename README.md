@@ -1,6 +1,6 @@
 # Práctica-Docker
 
-| EJERCICIOS |
+| Ejercicios | Ver |
 | ------ | ------ |
 | Ejercicio 3 | [ejercicio3/ejercicio3.md] |
 | Ejercicio 4 | [ejercicio4/ejercicio4.md] |
