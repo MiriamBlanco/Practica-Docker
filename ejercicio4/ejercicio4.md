@@ -12,6 +12,8 @@ docker image pull iesgn/guestbook
 
 ![image](../imagenes/17.png)
 
+----------------------
+
 * Esta aplicación guarda la información en una base de datos no relacional redis, que utiliza el puerto 6379/tcp para conectarnos. Usaremos la imagen `redis`.
 
 ```bash
@@ -19,6 +21,8 @@ docker image pull redis
 ```
 
 ![image](../imagenes/18.png)
+
+-----------------------------
 
 - Después de instalar las imágenes, vamos a crear los dos contenedores en la misma red, para ello ejecutamos los siguiente:
 
@@ -28,6 +32,8 @@ docker network create red_guestbook
 
 ![image](../imagenes/19.png)
 
+-------------------------
+
 - Ahora ejecutamos el primer contenedor:
 
 ```bash
@@ -35,6 +41,8 @@ docker run -d --name redis --network red_guestbook -v /opt/redis:/data redis red
 ```
 
 ![image](../imagenes/20.png)
+
+-------------------------------
 
 - y después, el segundo:
 
@@ -44,9 +52,14 @@ docker run -d -p 80:5000 --name guestbook --network red_guestbook iesgn/guestboo
 
 ![image](../imagenes/21.png)
 
+------------------------
+
 - Por último, si nos vamos a nuestro navegador y escribimos `hhtp://localhost/`, podemos comprobar que se ha creado todo correctamente:
 
 ![image](../imagenes/22.png)
+
+--------------------------
+--------------------------
 
 ## Ejemplo 2: Despliegue de la aplicación Temperaturas
 
@@ -60,6 +73,8 @@ docker image pull iesgn/temperaturas_frontend
 
 ![image](../imagenes/23.png)
 
+----------------------------
+
 * `backend`: Es el segundo microservicio que nos ofrece un servicio web de tipo API Restful. A esta API Web podemos hacerles consultas sobre los municipios y sobre las temperaturas. En este caso, se utiliza el puerto 5000/tcp para ofrecer el servicio. Usaremos la imagen `iesgn/temperaturas_backend`.
 
 ```bash
@@ -67,6 +82,8 @@ docker image pull iesgn/temperaturas_backend
 ```
 
 ![image](../imagenes/24.png)
+
+------------------------------
 
 - Ahora creamos una red para conectar los dos contenedores:
 
@@ -76,6 +93,8 @@ docker network create red_temperaturas
 
 ![image](../imagenes/25.png)
 
+-----------------------------
+
 - Ejecutamos los contenedores:
 
 ```bash
@@ -84,15 +103,22 @@ docker run -d --name temperaturas-backend --network red_temperaturas iesgn/tempe
 
 ![image](../imagenes/26.png)
 
+------------------------------
+
 ```bash
 docker run -d -p 80:3000 --name temperaturas-frontend --network red_temperaturas iesgn/temperaturas_frontend
 ```
 
 ![image](../imagenes/27.png)
 
+-----------------------------------
+
 - Y, por último, probamos en el navegador que funciona correctamente:
 
 ![image](../imagenes/28.png)
+
+-------------------------
+-------------------------
 
 
 ## Ejemplo 3: Despliegue de Wordpress + mariadb
@@ -105,11 +131,14 @@ docker image pull mariadb
 
 ![image](../imagenes/29.png)
 
+
 ```bash
 docker image pull wordpress
 ```
 
 ![image](../imagenes/30.png)
+
+--------------------------------------
 
 - Ahora, creamos una red para los contenedores:
 
@@ -118,6 +147,8 @@ docker network create red_wp
 ```
 
 ![image](../imagenes/31.png)
+
+----------------------------------------
 
 - Ejecutamos el primer contenedor:
 
@@ -150,9 +181,15 @@ docker run -d --name servidor_wp \
 
 ![image](../imagenes/33.png)
 
+-----------------------------------
+
 - Nos vamos al navegador y comprobamos que funciona:
 
 ![image](../imagenes/34.png)
 
+--------------------------------------
 
-[Volver a la página principal](../README.md)
+
+- [Volver a la página principal](../README.md)
+- [Práctica 3](../ejercicio3/ejercicio3.md)
+- [Práctica 5](../ejercicio5/ejercicio5.md)
