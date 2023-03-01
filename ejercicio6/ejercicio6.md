@@ -144,3 +144,7 @@ docker run -d -p 80:3000 --name ejemplo2 miriam/ejemplo3:v1
 - Y, para finalizar, comprobamos que funciona en el navegador:
 
 ![image](../imagenes/68.png)
+
+--------------------
+
+[Volver a la página principal](../README.md)
