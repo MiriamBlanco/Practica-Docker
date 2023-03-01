@@ -187,3 +187,6 @@ docker-compose down
 ```
 
 ![image](../imagenes/51.png)
+
+
+[Volver a la página principal](../README.md)
