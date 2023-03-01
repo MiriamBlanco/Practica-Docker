@@ -155,4 +155,4 @@ docker ps -a
 ![image](../imagenes/16.png)
 
 
-[Volver a la página principal](../README.md)
+<p style="text-align: justify;">[Volver a la página principal](../README.md)</p>
