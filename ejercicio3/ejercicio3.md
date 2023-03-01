@@ -155,4 +155,5 @@ docker ps -a
 ![image](../imagenes/16.png)
 
 
-[^1]: [Volver a la página principal](../README.md) [^2]: [Práctica 4](../ejercicio4/ejercicio4.md)
+[Volver a la página principal](../README.md)
+[Práctica 4](../ejercicio4/ejercicio4.md)
