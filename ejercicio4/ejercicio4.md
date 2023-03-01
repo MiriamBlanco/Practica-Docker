@@ -153,3 +153,6 @@ docker run -d --name servidor_wp \
 - Nos vamos al navegador y comprobamos que funciona:
 
 ![image](../imagenes/34.png)
+
+
+[Volver a la página principal](../README.md)
