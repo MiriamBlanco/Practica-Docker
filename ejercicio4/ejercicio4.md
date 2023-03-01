@@ -12,7 +12,6 @@ docker image pull iesgn/guestbook
 
 ![image](../imagenes/17.png)
 
-----------------------
 
 * Esta aplicación guarda la información en una base de datos no relacional redis, que utiliza el puerto 6379/tcp para conectarnos. Usaremos la imagen `redis`.
 
@@ -42,7 +41,6 @@ docker run -d --name redis --network red_guestbook -v /opt/redis:/data redis red
 
 ![image](../imagenes/20.png)
 
--------------------------------
 
 - y después, el segundo:
 
@@ -73,7 +71,6 @@ docker image pull iesgn/temperaturas_frontend
 
 ![image](../imagenes/23.png)
 
-----------------------------
 
 * `backend`: Es el segundo microservicio que nos ofrece un servicio web de tipo API Restful. A esta API Web podemos hacerles consultas sobre los municipios y sobre las temperaturas. En este caso, se utiliza el puerto 5000/tcp para ofrecer el servicio. Usaremos la imagen `iesgn/temperaturas_backend`.
 
@@ -103,7 +100,6 @@ docker run -d --name temperaturas-backend --network red_temperaturas iesgn/tempe
 
 ![image](../imagenes/26.png)
 
-------------------------------
 
 ```bash
 docker run -d -p 80:3000 --name temperaturas-frontend --network red_temperaturas iesgn/temperaturas_frontend
