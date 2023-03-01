@@ -179,4 +179,4 @@ docker run -d -p 80:3000 --name ejemplo2 miriam/ejemplo3:v1
 
 --------------------
 
-<div style="text-align: center"> [Volver a la página principal](../README.md) <div/>
+[Volver a la página principal](../README.md)
